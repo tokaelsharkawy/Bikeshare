@@ -186,16 +186,6 @@ def user_stats(df,city):
     print('-'*40)
 
     
-def display_raw_data(df) :
-    display_raw_data = input("Would you like to view 5 rows of individual trip data? Enter yes or no?\n").lower()
-    start = 0
-    while view_data == 'yes':
-        print(df.iloc[start:start + 5])
-        start+= 5
-        view_display = input("Do you wish to continue?: Yes OR No \n").lower()
-        if view_display== 'no':
-            break
-        
         
 def main():
     while True:
